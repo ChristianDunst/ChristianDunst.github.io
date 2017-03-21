@@ -1,0 +1,314 @@
+
+!DOCTYPE html
+html lang=en
+head
+meta charset=utf-8
+titleIndex - BitSharestitle
+link rel=shortcut icon type=imagex-icon href=favicon.ico
+link rel=alternate type=applicationrss+xml href=feed.xml
+meta name=viewport content=width=device-width, initial-scale=1
+link rel=stylesheet href=cssbootstrap.min.css
+link rel=stylesheet href=cssstyle.css
+link rel=stylesheet href=maxcdn.bootstrapcdn.comfont-awesome4.3.0cssfont-awesome.min.css
+script src=cdn.optimizely.comjs2331670385.jsscript
+ 
+script
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]function(){
+(i[r].q=i[r].q[]).push(arguments)},i[r].l=1new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','www.google-analytics.comanalytics.js','ga');
+
+ga('create', 'UA-49934532-1', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+script
+ 
+ 
+script(function() {
+var _fbq = window._fbq  (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = 'connect.facebook.neten_USfbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '1437462266498952']);
+})();
+window._fbq = window._fbq  [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+script
+noscriptimg height=1 width=1 alt= style=displaynone src=httpswww.facebook.comtrid=1437462266498952&ev=PixelInitializednoscript
+ 
+ 
+script src=code.jquery.comjquery-1.11.2.min.jsscript
+script src=code.jquery.comjquery-migrate-1.2.1.min.jsscript
+script type='textjavascript'
+if (typeof jQuery != 'undefined') {
+    var filetypes = .(zipexedmgpdfdoc.xls.ppt.mp3txtrarwmamovaviwmvflvwav)$i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+    var hrefRedirect = '';
+
+    jQuery('body').on('click', 'a', function(event) {
+        var el = jQuery(this);
+        var track = true;
+        var href = (typeof(el.attr('href')) != 'undefined' )  el.attr('href')  '';
+        var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+        if (!href.match(^javascripti)) {
+            var elEv = []; elEv.value=0, elEv.non_i=false;
+            if (href.match(^mailtoi)) {
+                elEv.category = 'email';
+                elEv.action = 'click';
+                elEv.label = href.replace(^mailtoi, '');
+                elEv.loc = href;
+            }
+            else if (href.match(filetypes)) {
+                var extension = ([.].exec(href))  [^.]+$.exec(href)  undefined;
+                elEv.category = 'download';
+                elEv.action = 'click-' + extension[0];
+                elEv.label = href.replace( g,'-');
+                elEv.loc = baseHref + href;
+            }
+            else if (href.match(^httpsi) && !isThisDomain) {
+                elEv.category = 'external';
+                elEv.action = 'click';
+                elEv.label = href.replace(^httpsi, '');
+                elEv.non_i = true;
+                elEv.loc = href;
+            }
+            else if (href.match(^teli)) {
+                elEv.category = 'telephone';
+                elEv.action = 'click';
+                elEv.label = href.replace(^teli, '');
+                elEv.loc = href;
+            }
+            else track = false;
+
+            if (track) {
+                var ret = true;
+
+                if((elEv.category == 'external'  elEv.category == 'download') && (el.attr('target') == undefined  el.attr('target').toLowerCase() != '_blank') ) {
+                    hrefRedirect = elEv.loc;
+
+                    ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                        'nonInteraction' elEv.non_i ,
+                        'hitCallback'gaHitCallbackHandler
+                    });
+
+                    ret = false;
+                }
+                else {
+                    ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                        'nonInteraction' elEv.non_i
+                    });
+                }
+
+                return ret;
+            }
+        }
+    });
+
+    gaHitCallbackHandler = function() {
+        window.location.href = hrefRedirect;
+    }
+}
+script
+script src=cdn.rawgit.comhiliosjQuery.countdown2.1.0distjquery.countdown.min.jsscript
+script src=jsmoment.jsscript
+script src=jsparticles.jsscript
+script src=cdnjs.cloudflare.comajaxlibsmoment.js2.10.3moment-with-locales.min.jsscript
+script src=cdnjs.cloudflare.comajaxlibsmoment-timezone0.4.0moment-timezone-with-data-2010-2020.min.jsscript
+ 
+script type=textjavascriptwindow.liveSettings={api_key81acc27d9db94d95981445b1430c0109};script
+script type=textjavascript src=cdn.transifex.comlive.jsscript
+head
+body
+div class=navbar navbar-fixed-top role=navigation
+div class=container
+div class=navbar-header
+button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse
+span class=sr-onlyToggle navigationspan
+span class=icon-barspan
+span class=icon-barspan
+span class=icon-barspan
+button
+a href=img class=logo img-responsive src=imagestransparent_b.png height=38 width=38 alt=BitShares logoa
+div
+div class=navbar-collapse collapse
+ul class=nav navbar-nav navbar-right
+lia href=technologyTechnologyali
+lia target=_blank href=httpdocs.bitshares.euDocumentationali
+lia target=_blank href=httpswww.bitsharestalk.orgForumali
+lia target=_blank href=httpswww.cryptofresh.comBlock Explorerali
+lia class=btn btn-primary target=_blank style=padding4px 8px;margin-top 10px href=httpsbitshares.orgwalletOnline Exchangeali
+ul
+div
+div
+div
+section class=teaser 
+div class=slogan 
+center
+div id=getting-starteddiv
+h2 class=pitch style=padding-top5rem;
+BitShares - Your share in the Decentralized Exchange
+h2
+p class=pitch-sub
+Built using the latest in industry research, BitShares 2.0 offers a
+stack of financial services including exchange and banking on a blockchain.p
+br
+p
+a class=btn btn-lg btn-success href=httpsbitshares.orgdownloadDownloada
+span style=font-size 100% &nbsp; OR &nbsp; span
+a class=btn btn-lg btn-primary href=httpsbitshares.orgwalletTry Online Exchange a
+p
+center
+center
+div class=row center
+div class=container
+div
+div
+div
+section
+section id=features
+div class=container
+center
+div class=row row-eq-height
+ul class=features
+li onclick=location.href='technologyprice-stable-cryptocurrencies'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologyprice-stable-cryptocurrencies
+img class=feature-img src=..imagesfrontpageicon-price-stable.svg
+Price-Stable CryptocurrenciesabrSmartCoins provide the freedom of cryptocurrency with the stability of the dollarli
+ 
+li onclick=location.href='technologydecentralized-asset-exchange'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologydecentralized-asset-exchange
+img class=feature-img src=..imagesfrontpageicon-daex.svg
+Decentralized Asset ExchangeabrA fast and fluid trading platformli
+ 
+li onclick=location.href='technologyindustrial-performance-and-scalability'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologyindustrial-performance-and-scalability
+img class=feature-img src=..imagesfrontpageicon-performance.svg
+Industrial Performance and ScalabilityabrGraphene is capable of 100,000 TPS when we pay for the network to go with itli
+ 
+li onclick=location.href='technologydynamic-account-permissions'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologydynamic-account-permissions
+img class=feature-img src=..imagesfrontpageicon-corporate-acc.svg
+Dynamic Account PermissionsabrManagement for the corporate environmentli
+ 
+li onclick=location.href='technologyrecurring-and-scheduled-payments'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologyrecurring-and-scheduled-payments
+img class=feature-img src=..imagesfrontpageicon-rec-payments.svg
+Recurring & Scheduled PaymentsabrFlexible withdrawal permissionsli
+ 
+li onclick=location.href='technologyreferral-rewards-program'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologyreferral-rewards-program
+img class=feature-img src=..imagesfrontpageicon-referral.svg
+Referral Rewards ProgramabrNetwork growth through adoption rewardsli
+ 
+li onclick=location.href='technologyuser-issued-assets'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologyuser-issued-assets
+img class=feature-img src=..imagesfrontpageicon-asset-ident.svg
+User-Issued AssetsabrRegulation-compatible cryptoasset issuanceli
+ 
+li onclick=location.href='technologystakeholder-approved-project-funding'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologystakeholder-approved-project-funding
+img class=feature-img src=..imagesfrontpageicon-funding.svg
+Stakeholder-Approved Project FundingabrA self-sustaining funding modelli
+ 
+li onclick=location.href='technologytransferable-named-accounts'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologytransferable-named-accounts
+img class=feature-img src=..imagesfrontpageicon-trans-acc.svg
+Transferable Named AccountsabrEasy and secure transactionsli
+ 
+li onclick=location.href='technologydelegated-proof-of-stake-consensus'; class=col-xs-12 col-md-6 col-lg-4 state
+a href=technologydelegated-proof-of-stake-consensus
+img class=feature-img src=..imagesfrontpageicon-dpos.svg
+Delegated Proof-of-Stake ConsensusabrA robust and flexible consensus protocolli
+ 
+ul
+div
+center
+div
+section
+footer class=footer
+ul class=row menu nav 
+div class=container
+li class=col-xs-6 col-md-2 
+h1 style=margin-top 32px;Resourcesh1
+li
+li class=col-xs-6 col-md-2 h2Learnh2
+ul
+lia href=technologyTechnologyali
+ 
+lia target=_blank href=httpdocs.bitshares.euDocumentationali
+lia target=_blank href=httpdocs.bitshares.eumigrationMigration Guideali
+lia href=contactContactali
+ul
+li
+li class=col-xs-6 col-md-2h2Participateh2
+ul
+lia href=downloadDownloadali
+lia href=registerRegisterali
+lia href=depositDepositali
+lia href=referral-programReferral Programali
+ul
+li
+li class=col-xs-6 col-md-2h2Exploreh2
+ul
+lia target=_blank href=httpsbitsharestalk.orgForumali
+lia target=_blank href=httpcryptofresh.comBlock Explorerali
+lia target=_blank href=httpsbeyondbitcoin.orgBeyond Bitcoinali
+lia target=_blank href=httpbitsharesnews.infoBitShares Newsali
+lia href=newslettersNewslettersali
+ul
+li
+li class=col-xs-6 col-md-2h2Build h2
+ul
+lia target=_blank href=httpsgithub.combitsharesGitHubali
+lia href=doxygenDoxygenali
+ul
+li
+li class=col-xs-6 col-md-2h2Communityh2
+ul
+liscript async defer src=httpsbitshares-slackin.herokuapp.comslackin.jsscriptli
+lia target=_blank href=httpswww.reddit.comrBitSharesRedditali
+lia target=_blank href=httpstwitter.com_bitsharesTwitterali
+lia target=_blank href=httpswww.facebook.comofficialbitsharesFacebookali
+lia target=_blank href=httpsplus.google.com+BitsharesOrgpostsGoogle+ali
+lia target=_blank href=httpsweb.telegram.org#imp=g33416306Telegram chatali
+ul
+li
+div
+ul
+footer
+script src=jsbootstrap.jsscript
+script src=jsmain.jsscript
+script
+   $(div.navbar-fixed-top).autoHidingNavbar();
+ script
+script
+  var BTSW = window.BTSW  {};
+  (function () {
+  var script = document.createElement('script');
+  script.type = 'textjavascript';
+  script.async = true;
+  script.src = 'httpsbitshares.openledger.infowidgets2w.jsref='+encodeURIComponent(document.referrer);
+  var entry = document.getElementsByTagName('script')[0];
+  entry.parentNode.insertBefore(script, entry);
+  }());
+script
+script
+          var BTSW = window.BTSW  {};
+          (function () {
+            var script = document.createElement('script');
+            script.type = 'textjavascript';
+            script.async = true;
+            script.src = 'httpsbitshares.openledger.infowidgets2w.jsref=' + encodeURIComponent(document.referrer);
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+          }());
+        script
+body
+html
